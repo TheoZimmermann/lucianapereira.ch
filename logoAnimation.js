@@ -4,7 +4,7 @@ var svgSize;
 if (window.matchMedia("(min-width: 1024px)").matches) {
     svgSize = .4;
 } else {
-    svgSize = .3;
+    svgSize = .4;
 }
 logoDrawing.add({
     targets: '#logo .st0',
@@ -19,11 +19,8 @@ logoDrawing.add({
     targets: '#logo',
     easing: 'easeInOutSine',
     scale: svgSize,
-}).add({
-    targets: '#logo',
-    scale: svgSize,
-    easing: 'easeInOutSine',
-    translateY: -160,
+    translateY: -140,
+
 }).add({
     targets: '#hero .text',
     opacity: 1,
