@@ -266,10 +266,10 @@ section {
     align-content: center;
     height: 200px; }
     #footer .logo svg {
-      width: 80%;
-      height: 80%; }
+      width: 70%;
+      height: 70%; }
   #footer .name {
-    margin-top: -15px;
+    margin-top: -45px;
     text-transform: uppercase;
     font-weight: 500;
     font-size: 22px; }
@@ -405,6 +405,34 @@ section {
   -moz-transition: 350ms ease all;
   -o-transition: 350ms ease all;
   transition: 350ms ease all; }
+  #menu .social {
+    width: 100vw;
+    position: fixed;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    z-index: 1; }
+    #menu .social li {
+      height: 300px; }
+      #menu .social li:hover svg {
+        opacity: 1;
+        -webkit-transition: opacity .3s;
+        -o-transition: opacity .3s;
+        transition: opacity .3s; }
+    #menu .social svg {
+      -webkit-transition: opacity .3s;
+      -o-transition: opacity .3s;
+      transition: opacity .3s;
+      opacity: .5;
+      width: 35%;
+      height: 35%; }
   #menu .grid-container {
     position: absolute; }
   #menu.opened {
@@ -424,16 +452,16 @@ section {
       padding: 10px; }
     #menu.opened .background-borders {
       z-index: 2; }
-  #menu ul {
+  #menu ul:not(.social) {
     list-style: none;
     margin: 0 auto;
     width: 100%; }
     @media screen and (min-width: 1024px) {
-      #menu ul {
+      #menu ul:not(.social) {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr; } }
     @media screen and (max-width: 1024px) {
-      #menu ul {
+      #menu ul:not(.social) {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -441,17 +469,17 @@ section {
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
         flex-direction: column; } }
-    #menu ul li {
+    #menu ul:not(.social) li {
       position: relative;
       text-transform: uppercase;
       letter-spacing: 2px;
       font-weight: 300;
       height: 80px; }
       @media screen and (max-width: 1024px) {
-        #menu ul li {
+        #menu ul:not(.social) li {
           width: 100%;
           text-align: center; } }
-      #menu ul li a {
+      #menu ul:not(.social) li a {
         position: relative;
         z-index: 4;
         height: 15px;
@@ -465,14 +493,14 @@ section {
         -o-transition: 350ms ease all;
         transition: 350ms ease all; }
         @media screen and (min-width: 1024px) {
-          #menu ul li a {
+          #menu ul:not(.social) li a {
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex;
             -webkit-box-pack: end;
             -ms-flex-pack: end;
             justify-content: flex-end; } }
-        #menu ul li a span {
+        #menu ul:not(.social) li a span {
           -ms-flex-item-align: end;
           align-self: flex-end;
           position: relative;
@@ -480,7 +508,7 @@ section {
           -webkit-transition: padding-right .3s;
           -o-transition: padding-right .3s;
           transition: padding-right .3s; }
-          #menu ul li a span:after {
+          #menu ul:not(.social) li a span:after {
             left: 0;
             bottom: -.6em;
             content: " ";
@@ -492,16 +520,16 @@ section {
             -moz-transition: 350ms ease all;
             -o-transition: 350ms ease all;
             transition: 350ms ease all; }
-          #menu ul li a span:hover {
+          #menu ul:not(.social) li a span:hover {
             -webkit-transition: padding-right .3s;
             -o-transition: padding-right .3s;
             transition: padding-right .3s; }
             @media screen and (min-width: 1024px) {
-              #menu ul li a span:hover {
+              #menu ul:not(.social) li a span:hover {
                 padding-right: 5%; } }
-            #menu ul li a span:hover:after {
+            #menu ul:not(.social) li a span:hover:after {
               width: 60%; }
-        #menu ul li a i {
+        #menu ul:not(.social) li a i {
           position: absolute;
           padding: 0 1.25em 0 0;
           font-size: 2em; }
